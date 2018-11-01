@@ -1,0 +1,19 @@
+{
+  "name": "raspi_rest2serial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-zach/raspi_rest2serial.git"
+  },
+  "author": "Alexander Zach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex-zach/raspi_rest2serial/issues"
+  },
+  "homepage": "https://github.com/alex-zach/raspi_rest2serial#readme"
+}
