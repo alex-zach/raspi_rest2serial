@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/alex-zach/raspi_rest2serial/issues"
   },
-  "homepage": "https://github.com/alex-zach/raspi_rest2serial#readme"
+  "homepage": "https://github.com/alex-zach/raspi_rest2serial#readme",
+  "dependencies": {
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "raspi": "^5.0.2",
+    "raspi-serial": "^5.0.0"
+  }
 }
