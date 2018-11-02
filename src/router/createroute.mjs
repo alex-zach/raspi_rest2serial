@@ -12,7 +12,7 @@ const createRoute = (name, options) => (ctx, next) => {
     str = str.replace(new RegExp(`\\%\\(${k}\\)`, 'g'), params[k] ? params[k] : null)
   }
 
-  ctx.serial.send(str)
+  ctx.serial.write(str)
 
   ctx.response.status = 204
 

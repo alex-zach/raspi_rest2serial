@@ -20,5 +20,8 @@ start({
       },
       serialString: '%(name) a %(as)'
     }
+  }, 
+  serialconfig: {
+    portId: '/dev/ttyACM0'
   }
 })

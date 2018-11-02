@@ -6,14 +6,14 @@ import SerialInterface from './util/serial'
 const start = async ({port = 8080, serialconfig = {}, routes = {}} = {}) => {
   const app = new Koa();
 
-  const serial = new SerialInterface()
+  const serial = new SerialInterface(serialconfig)
   await serial.open()
 
   const router = createRouter(routes)
 
   app
     .use(bodyParser())
-    .use((ctx, next) => {
+    .use(async (ctx, next) => {
       ctx.serial = serial
       next()
     })

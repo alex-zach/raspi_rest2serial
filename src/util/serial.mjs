@@ -5,7 +5,7 @@ const { Serial } = raspi_serial
 
 class SerialInterface {
   constructor(config = {}) {
-    this.serial = new Serial(serialconfig)
+    this.serial = new Serial(config)
     this.buffer = ''
   }
 
